@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  
+  $("#btnSoma").click(function(){
+    let v1 =  Number( $("#v1").val() );
+    let v2 =  Number ( $("#v2").val() );
+    let resultado = v1 + v2;
+    $("#resultado").val(resultado);
+  });
+
+   $("#btnSubtracao").click(function(){
+    let v1 =  Number( $("#v1").val() );
+    let v2 =  Number ( $("#v2").val() );
+    let resultado = v1 - v2;
+    $("#resultado").val(resultado);
+  });
+  
+});
+
+</script>
+ 
+</head>
+<body>
+
+    <label for="v1">Digite valor1</label>
+    <br>
+    <input type="text" id="v1">
+    <br><br>
+    <label for="v2">Digite valor2</label>
+    <br>
+    <input type="text" id="v2">
+    <br><br>
+    <button id="btnSoma">Somar</button>
+    <button id="btnSubtracao">Subtrair</button>
+    <hr>
+    <br>
+     <label for="resultado">Resultado</label>
+    <br>
+    <input type="text" id="resultado">
+
+</body>
+</html>
